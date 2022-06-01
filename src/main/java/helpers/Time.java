@@ -6,6 +6,9 @@ public class Time {
 
     private static final String LOG_CLASE = "Error al ejecutar el metodo de tiempo -> ";
 
+    private Time() {
+    }
+
 
     public static void getTimeTen() {
         final String METODO = " -> getTimeFour";

@@ -15,6 +15,9 @@ public class Util {
 
     private static Faker faker = Faker.instance(new Locale("es", "CO"), new Random());
 
+    private Util() {
+    }
+
     public static List<WebElement> obtenerlocalizadorListBusquedaGeneral() {
         String xpath = Constant.LOCALIZADOR_TIPOLIST_ANDROID_RESULTADOS_BUSQUEDA_GENERAL;
         return BrowseTheWeb.as(theActorInTheSpotlight()).getDriver().findElements(By.xpath(xpath));

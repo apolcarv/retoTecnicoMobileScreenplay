@@ -19,7 +19,6 @@ public class ManagerLog {
 
     public static void imprimirFallo(String mensaje) {
         logger.info(mensaje);
-        Assert.fail("[TEST FALLIDO]: " + mensaje);
     }
 
 
